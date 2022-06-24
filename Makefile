@@ -4,4 +4,4 @@ all:
 	g++ -I${CUDA_PATH}/include -Wall -fPIC -shared -std=c++0x -o hooking.so hooking.cpp -ldl -lcuda 
 
 clean:
-	rm -f function_hooking.so backend frontend
+	rm -f hooking.so 
